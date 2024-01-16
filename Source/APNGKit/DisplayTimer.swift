@@ -58,6 +58,7 @@ public class DisplayTimer: DrivingTimer {
     }
 
     @objc private func step(displayLink: CADisplayLink) {
+        guard !displayLink.isPaused else { return }
         if target == nil {
             // The original target is already release. No need to hold the display link anymore.
             // This also allows `self` to be released.
