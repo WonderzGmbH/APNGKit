@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "APNGKit"
-  s.version      = "2.2.5"
+  s.version      = "2.3.0"
   s.summary      = "High performance and delightful way to play with APNG format in iOS."
 
   s.description  = <<-DESC
@@ -18,13 +18,16 @@ Pod::Spec.new do |s|
   s.authors            = { "onevcat" => "onevcat@gmail.com" }
   s.social_media_url   = "http://twitter.com/onevcat"
 
-  s.ios.deployment_target = "9.0"
-  s.osx.deployment_target = "10.12"
-  s.tvos.deployment_target = "9.0"
+  s.ios.deployment_target = "12.0"
+  s.osx.deployment_target = "10.14"
+  s.tvos.deployment_target = "12.0"
+  s.visionos.deployment_target = "1.0"
 
   s.source       = { :git => "https://github.com/onevcat/APNGKit.git", :tag => s.version }
   
   s.source_files  = "Source/**/*.swift"
+  s.resource_bundles = {"APNGKit" => ["Source/APNGKit/PrivacyInfo.xcprivacy"]}
+
   s.swift_versions = ["5.3", "5.4", "5.5"]
-  s.dependency "Delegate", "~> 1.1"
+  s.dependency "Delegate", "~> 1.3"
 end

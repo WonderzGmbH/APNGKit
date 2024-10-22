@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [2.3.0] - 2024-03-19
+
+### Add
+
+- Support for visionOS. Now APNGKit can be used on visionOS in the native way. [#146](https://github.com/onevcat/APNGKit/pull/146)
+- Privacy Manifest support. Although APNGKit is not tracking any user information nor using any APIs that require declaration, an empty privacy manifest file was added to the project to prevent any potential warning. [#144](https://github.com/onevcat/APNGKit/pull/144)
+
+### Note
+
+- To align with the latest build environment and Xcode, APNGKit now increases the minimum deployment target to iOS 12, macOS 10.14 and tvOS 12. [#145](https://github.com/onevcat/APNGKit/pull/145)
+
+
 ## [2.2.5] - 2023-12-11
 
 ### Fix
@@ -93,3 +105,4 @@ need also check the README to do a re-implement.
 [2.2.3]: https://github.com/onevcat/APNGKit/compare/2.2.2...2.2.3
 [2.2.4]: https://github.com/onevcat/APNGKit/compare/2.2.3...2.2.4
 [2.2.5]: https://github.com/onevcat/APNGKit/compare/2.2.4...2.2.5
+[2.3.0]: https://github.com/onevcat/APNGKit/compare/2.2.5...2.3.0
